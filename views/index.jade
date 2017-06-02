@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form#generate-form
+    div
+      | Tweet URL:
+      input#url-input(name='body')
+      input#submit-button(type='submit',value='Generate')
